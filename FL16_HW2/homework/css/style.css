@@ -125,6 +125,11 @@ nav a {
     height: 100%;
 }
 
+.submit-btn {
+    display: block;
+    margin-left: auto;
+}
+
 @media print {
     section:nth-of-type(n+2),
     section div:nth-of-type(n+2),
