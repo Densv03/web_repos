@@ -1,0 +1,80 @@
+$colors:("white":#fff, "grey":#bbbbce);
+body{
+    background-color: #21232e;
+}
+header{
+    background: url("../img/m-h-night.jpg");
+    .header-wrap{
+        .landing-logo{
+            color:map-get($map: $colors, $key: "white");
+        }
+        .header_heading{
+        color:map-get($map: $colors, $key: "white");
+        }
+        .header_heading::before{
+            background-color: #ff4e33;
+        }
+        .header_text{
+            color:map-get($map: $colors, $key: "white");
+        }
+        .header_button{
+            color:map-get($map: $colors, $key: "white");
+            background: #e3ac00;
+            margin-right: 150px;
+        }
+    }
+}
+main{
+    .section_text{
+        color:map-get($map: $colors, $key: "white");
+    }
+    .section_text::before{
+        background-color: #ff4e33;
+    }
+    .section_card_wrap{
+        .section_card{
+            background-color:#3b3f50;
+        }
+        .section_card_right_container{
+            .section_card_heading{
+                color:map-get($map: $colors, $key: "white");
+            }
+            .section_card_text{
+                color:map-get($map: $colors, $key: "grey")
+            }
+            .section_link{
+                color:map-get($map: $colors, $key: "grey")
+            }
+        }
+    }
+    .section_banner::before{
+        background-color: #ff4e33;
+    }
+    .section_banner{
+        background: linear-gradient(90deg, #dea504, #953050);
+        .section_banner_heading{
+            color:map-get($map: $colors, $key: "white");
+        }
+        .section_banner_text{
+            color: #c0bfa0;
+        }
+        button{
+            background: #e3ac00;
+            color:map-get($map: $colors, $key: "white");
+        }
+    }
+}
+footer{
+    background-color:#3b3f50;
+    .footer-wrap{
+        .footer_logo{
+            color:map-get($map: $colors, $key: "grey")
+        }
+        .footer_text{
+            color:map-get($map: $colors, $key: "grey")
+        }
+        .footer-cr{
+            color:map-get($map: $colors, $key: "grey")
+        }
+    }
+}

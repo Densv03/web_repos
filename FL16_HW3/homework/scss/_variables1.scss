@@ -1,0 +1,82 @@
+$colors:("dark":#2c2f3c, "dark_bg":#21232e, 
+"lightblue":#2caacd, "green":#699900,
+"white":#fff, "grey":#bbbbce, "footer_text":#c0bfa0);
+body{
+    background: #fff;
+}
+header{
+    background: url("../img/m-h-day.jpg");
+    .header-wrap{
+        .landing-logo{
+            color:map-get($map: $colors, $key: "dark");
+        }
+        .header_heading{
+            color:map-get($map: $colors, $key: "dark");
+        }
+        .header_heading::before{
+            background-color: map-get($map: $colors, $key: "lightblue");
+        }
+        .header_text{
+            color:map-get($map: $colors, $key: "dark");
+        }
+        .header_button{
+            color: #fff;
+            background: map-get($map: $colors, $key: "green");
+            margin-right: 150px;
+        }
+    }
+}
+main{
+    .section_text{
+        color:map-get($map: $colors, $key: "dark")
+    }
+    .section_text::before{
+        background-color: map-get($map: $colors, $key: "lightblue");
+    }
+    .section_card_wrap{
+        .section_card{
+            background-color: map-get($map: $colors, $key: "dark_bg");
+        }
+        .section_card_right_container{
+            .section_card_heading{
+                color: map-get($map: $colors, $key: "white");
+            }
+            .section_card_text{
+                color: map-get($map: $colors, $key: "grey");
+            }
+            .section_link{
+                color:map-get($map: $colors, $key: "grey");
+            }
+        }
+    }
+    .section_banner::before{
+        background-color: map-get($map: $colors, $key: "lightblue");
+    }
+    .section_banner{
+        background: linear-gradient(90deg, #65950f, #2e5cd7);
+        .section_banner_heading{
+            color:map-get($map: $colors, $key: "dark");
+        }
+        .section_banner_text{
+            color: map-get($map: $colors, $key: "footer_text");
+        }
+        button{
+            background: map-get($map: $colors, $key: "green");
+            color:map-get($map: $colors, $key: "white");
+        }
+    }
+}
+footer{
+    background-color: map-get($map: $colors, $key: "dark_bg");
+    .footer-wrap{
+        .footer_logo{
+            color: map-get($map: $colors, $key: "grey");
+        }
+        .footer_text{
+            @extend .footer_logo;
+        }
+        .footer-cr{
+            @extend .footer_text;
+        }
+    }
+}
