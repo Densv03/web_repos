@@ -2,28 +2,209 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>Responsive</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="fontawesome-free/css/all.css" rel="stylesheet">
+    <title>Responsive</title>
 </head>
 
 <body>
-  <header>
-    <a name="top"></a>
-    <nav>
-      <img src="img/logo.png" alt="logo" class="logo">
-      <ul>
-        <li><a href="#top">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">services</a></li>
-        <li><a href="#">pricing</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <a name="top"></a>
+        <nav>
+            <a href="#top">
+                <img src="img/logo.png" alt="logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="#top">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#help">services</a></li>
+                <li><a href="#pricing">pricing</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <img src="img/header_bg.jpg" alt="lady" class="img-lady">
+            <div class="subcontainer">
+                <h2>proffesional developers health care</h2>
+                <h3>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nisi fugit et excepturi iure unde! Repudiandae, obcaecati recusandae.
+                </h3>
+                <div class="svg">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heartbeat" class="svg-inline--fa fa-heartbeat fa-w-16 svgs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 
+                    11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 
+                    288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 
+                    100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 
+                    256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 
+                    28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"></path></svg>
+                </div>
+                <div class="svg">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="medkit" class="svg-inline--fa fa-medkit fa-w-16 svgs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M96 480h320V128h-32V80c0-26.51-21.49-48-48-48H176c-26.51 
+                  0-48 21.49-48 48v48H96v352zm96-384h128v32H192V96zm320 80v256c0 26.51-21.49 48-48 48h-16V128h16c26.51 0 
+                  48 21.49 48 48zM64 480H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v352zm288-208v32c0 
+                  8.837-7.163 16-16 16h-48v48c0 8.837-7.163 16-16 16h-32c-8.837 0-16-7.163-16-16v-48h-48c-8.837 
+                  0-16-7.163-16-16v-32c0-8.837 7.163-16 16-16h48v-48c0-8.837 7.163-16 16-16h32c8.837 0 16 7.163 16 
+                  16v48h48c8.837 0 16 7.163 16 16z"></path></svg>
+                </div>
+                <div class="svg">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="stethoscope" class="svg-inline--fa fa-stethoscope fa-w-16 svgs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M447.1 112c-34.2.5-62.3 28.4-63 62.6-.5 24.3 12.5 45.6 32 
+                  56.8V344c0 57.3-50.2 104-112 104-60 0-109.2-44.1-111.9-99.2C265 333.8 320 269.2 320 
+                  192V36.6c0-11.4-8.1-21.3-19.3-23.5L237.8.5c-13-2.6-25.6 5.8-28.2 18.8L206.4 35c-2.6 13 
+                  5.8 25.6 18.8 28.2l30.7 6.1v121.4c0 52.9-42.2 96.7-95.1 
+                  97.2-53.4.5-96.9-42.7-96.9-96V69.4l30.7-6.1c13-2.6 21.4-15.2 18.8-28.2l-3.1-15.7C107.7 6.4 
+                  95.1-2 82.1.6L19.3 13C8.1 15.3 0 25.1 0 36.6V192c0 77.3 55.1 142 128.1 156.8C130.7 439.2 
+                  208.6 512 304 512c97 0 176-75.4 176-168V231.4c19.1-11.1 32-31.7 32-55.4 
+                  0-35.7-29.2-64.5-64.9-64zm.9 80c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16z"></path></svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <a name="about"></a>
+        <div class="left-side">
+            <img src="img/about_img.png" alt="left picture" class="tool-picture">
+        </div>
+        <div class="right-side">
+            <h2>about clinic</h2>
+            <h5>professional care</h5>
+            <h3>Medical Consulting</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nobis illum distinctio fuga, hic doloremque vitae. Eum corporis atque, magni, saepe quam doloremque assumenda, dicta doloribus ipsum asperiores esse sequi!</h4>
+            <h3>Laboratory analysis</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ratione, quod qui perspiciatis temporibus suscipit laborum explicabo non vitae necessitatibus minus, reprehenderit consectetur. Accusamus iure, consectetur nobis similique
+                nostrum et?</h4>
+            <h3>Diagnostics</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nostrum esse necessitatibus corporis modi illum inventore error quisquam sint quibusdam? At nam repudiandae ex minima sit aut amet atque ipsum?</h4>
+        </div>
+    </section>
+    <section class="help">
+        <a name="help"></a>
+        <h2>How we can help you</h2>
+        <h3>read more about our services</h3>
+        <div class="cards">
+            <div class="card1">
+                <img src="img/icons/oftalmology.jpg" alt="picture">
+                <h4>Ophtalmology</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident nam ratione accusantium fuga vel perspiciatis id ducimus beatae modi.</p>
+            </div>
+            <div class="card2">
+                <img src="img/icons/dentistry.jpg" alt="picture">
+                <h4>Dentistry</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident nam ratione accusantium fuga vel perspiciatis id ducimus beatae modi.</p>
+            </div>
+            <div class="card3">
+                <img src="img/icons/cardiology.jpg" alt="picture">
+                <h4>Cardiology</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident nam ratione accusantium fuga vel perspiciatis id ducimus beatae modi.</p>
+            </div>
+            <div class="card4">
+                <img src="img/icons/pediatrics.jpg" alt="picture">
+                <h4>Pediatrics</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident nam ratione accusantium fuga vel perspiciatis id ducimus beatae modi.</p>
+            </div>
+            <div class="card5">
+                <img src="img/icons/laboratory.jpg" alt="picture">
+                <h4>Laboratory</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident nam ratione accusantium fuga vel perspiciatis id ducimus beatae modi.</p>
+            </div>
+            <div class="card6">
+                <img src="img/icons/radiology.jpg" alt="picture">
+                <h4>Radiology</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident nam ratione accusantium fuga vel perspiciatis id ducimus beatae modi.</p>
+            </div>
+        </div>
+    </section>
+    <section class="offers">
+        <a name="pricing"></a>
+        <h2>our special offers</h2>
+        <h3>start to be healthy today</h3>
+        <div class="container">
+            <div class="blue-item">
+                <ul>
+                    <li>Allergy Check</li>
+                    <li>$ 255</li>
+                    <li>10 treatments</li>
+                    <li>Allergy Test</li>
+                    <li>Consultation</li>
+                    <li>Treatments</li>
+                    <li>10 Procedures</li>
+                    <li>X</li>
+                    <li>Test Results</li>
+                    <li>
+                        <a href="#">Get Now</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="white-item">
+                <ul>
+                    <li>Eye Checkup</li>
+                    <li>$ 108</li>
+                    <li>3 treatments</li>
+                    <li>Allergy Test</li>
+                    <li>Consultation</li>
+                    <li>Treatments</li>
+                    <li>10 Procedures</li>
+                    <li>X</li>
+                    <li>Test Results</li>
+                    <li>
+                        <a href="#">Get Now</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="blue-item">
+                <ul>
+                    <li>Dental Care</li>
+                    <li>$ 320</li>
+                    <li>6 treatments</li>
+                    <li>Allergy Test</li>
+                    <li>Consultation</li>
+                    <li>Treatments</li>
+                    <li>10 Procedures</li>
+                    <li>X</li>
+                    <li>Test Results</li>
+                    <li>
+                        <a href="#">Get Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <a name="contact"></a>
+            <h2>Make An Appointment</h2>
+            <h3>AND WE WILL CONTACT YOU</h3>
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Phone">
+            <input type="date">
+            <!-- <input type="text" placeholder="Subject"> -->
+            <select>
+    <option value="Laboratory">Laboratory</option>
+    <option value="Radiology">Radiology</option>
+</select>
+            <button>Submit</button>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2021 EPAM</p>
+    </footer>
+
+    <div class="arrow">
+        <a href="#top">
+            <svg width="50" height="50" class="circle">
+                <circle cx="25" cy="25" r="25"/>
+                <line stroke="#fff" x1="25" y1="32" x2="25" y2="17" stroke-width="2" />
+                <line stroke="#fff" x1="25" y1="17" x2="20" y2="22" stroke-width="2" />
+                <line stroke="#fff" x1="25" y1="17" x2="30" y2="22" stroke-width="2" />
+              </svg>
+        </a>
+    </div>
 </body>
 
 </html>
