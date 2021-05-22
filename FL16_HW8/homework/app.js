@@ -111,28 +111,24 @@ function getValues(obj) {
 
 function showFormattedDate(dateObj) {
     dateObj = dateObj.toString();
-    let i = 0,
-        spaces = 0,
+    let spaces = 0,
         month = '',
         day = '',
         year = '';
-        for(let i = 0; i < dateObj.length; ++i){
-            if(spaces === 1){
-                month+=dateObj[i];
-            }
-            else if(spaces === 2){
-                day+=dateObj[i];
-            }
-            else if(spaces === 3){
-                year+=dateObj[i];
-            }
-            else if(spaces === 4){
-                break
-            }
-            if(dateObj[i] === ' '){
-                spaces++;
-            }
+    for (let i = 0; i < dateObj.length; ++i) {
+        if (spaces === 1) {
+            month += dateObj[i];
+        } else if (spaces === 2) {
+            day += dateObj[i];
+        } else if (spaces === 3) {
+            year += dateObj[i];
+        } else if (spaces === 4) {
+            break
         }
-        return `It is ${day}of ${month}, ${year}`;
+        if (dateObj[i] === ' ') {
+            spaces++;
+        }
+    }
+    return `It is ${day}of ${month}, ${year}`;
 }
 console.log(showFormattedDate(new Date('2018-08-27T01:10:00')));
