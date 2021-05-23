@@ -36,6 +36,8 @@ function negativeCount(arr) {
 
 function letterCount(str, letter) {
     let counter = 0;
+    str = str.toLowerCase();
+    letter = letter.toLowerCase();
     str.split('').forEach(element => {
         if (element === letter) {
             counter++;
