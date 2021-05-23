@@ -1,4 +1,4 @@
-// let event = prompt('Enter name of event: ', 'meenting');
+let event = prompt('Enter name of event: ', 'meenting');
 function meetingCreation() {
     let name = document.getElementById('name').value,
         time = document.getElementById('time').value,
