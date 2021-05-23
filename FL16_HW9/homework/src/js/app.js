@@ -20,5 +20,6 @@ function converter() {
     if (euros < 0 || dollars < 0) {
         alert('Incorrect data');
     }
-    alert(`${euros} euros are equal ${euros * 33.41}hrns, ${dollars} dollars are equal ${dollars * 27.43}hrns`)
+    alert(`${euros} euros are equal ${parseFloat((euros * 33.41).toFixed(2))}hrns,
+${dollars} dollars are equal ${parseFloat((dollars * 27.43).toFixed(2))}hrns`)
 }
