@@ -76,6 +76,62 @@ function getProgrammersDay(year) {
 }
 // console.log(getProgrammersDay(2021));
 
-function howFarIs(day){
-    
+function howFarIs(specifiedWeekday) {
+    let temp = Date.now(),
+        today = new Date(temp),
+        day = getWeekDay(today);
+    if (specifiedWeekday.toLowerCase() === day.toLowerCase()) {
+        return `Hey, today is ${day}`;
+    }
+    let days = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+    ];
+    let day1, day2;
+    for (let i = 0; i < days.length; ++i) {
+        if (specifiedWeekday.toLowerCase() === days[i].toLocaleLowerCase()) {
+            day1 = parseInt(i) + 1;
+        }
+        if (day.toLocaleLowerCase() === days[i].toLocaleLowerCase()) {
+            day2 = parseInt(i) + 1;
+        }
+    }
+    // return `${day1} ${day2} ${typeof(day1)} ${typeof(day2)}`;
+    // return typeof(day);
+    return `It's ${day2-day1} day(s) left till ${specifiedWeekday}.`
+}
+// console.log(howFarIs('Sunday'));
+
+function isValidIdentifier(str) {
+    return str.replace(/[^0-9][_$a-zA-Z]/g, '') === '';
+}
+// console.log(isValidIdentifier('myVar_1'));
+function capitalize(str) {
+    return str.replace(/^[a-z]/g, u => u.toUpperCase());
+}
+// console.log(capitalize('my name is John Smith. I am 27.'));
+
+function isValidAudioFile(str) {
+    return str.replace(/./, '') === '';
+}
+
+function getHexadecimalColors(str) {
+    return str.replace(/./, '') === '';
+}
+
+function isValidPassword(str) {
+    return str.replace(/./, '') === '';
+}
+
+function addThousandsSeparators(str) {
+    return str.replace(/./, '') === '';
+}
+
+function getAllUrlsFromText(str) {
+    return str.replace(/./, '') === '';
 }
