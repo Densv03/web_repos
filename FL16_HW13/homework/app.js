@@ -158,28 +158,19 @@ document.querySelector('.regionOrLanguageChoose').addEventListener('change', (ev
                 function sortByCountry_reversed(arr) {
                     arr.sort((a, b) => a.name < b.name ? 1 : -1);
                 }
-                // try {
-                //     const table = document.querySelector('.tab');
-                //     app_root.removeChild(table);
-                // } catch {}
+                try {
+                    const table = document.querySelector('.tab');
+                    app_root.removeChild(table);
+                } catch {}
                 let countryByRegion_sorted = countryByRegion,
                     // countryByRegion_default = countryByRegion,
                     countryByRegion_reversed = countryByRegion;
                 sortByCountry(countryByRegion_sorted);
                 sortByCountry_reversed(countryByRegion_reversed);
+                table_print(countryByRegion_sorted);
                 console.log(countryByRegion_sorted);
                 console.log(countryByRegion_reversed);
-                // table_print(countryByRegion_sorted);
-                // if (country_counter % 3 === 0) {
-                //     table_print(countryByRegion_sorted);
-                // } else if (country_counter % 3 === 1) {
-                //     table_print(countryByRegion_reversed);
-                // }
-                // else if(country_counter % 3 === 2){
-                //     table_print(countryByRegion_default);
-                // }
                 country_counter++;
-                // table_print(countryByRegion);
                 console.log(countryByRegion);
             });
         });
