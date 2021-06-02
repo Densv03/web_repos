@@ -81,24 +81,27 @@ function paint_green(el) {
 /* END TASK 1 */
 
 /* START TASK 2: Your code goes here */
-let phone_check = /^[+]*[s\./0-9]{12}$/g,
+let phone_check = /^[+]*[s./0-9]{12}$/g,
     input = document.querySelector('#task2 input'),
     btn = document.querySelector('#task2 button');
 btn.setAttribute('disabled', true);
-function validationCheck(str){
-    return /^[+]*[s\./0-9]{12}$/g.test(str);
+
+function validationCheck(str) {
+    return /^[+]*[s./0-9]{12}$/g.test(str);
 }
 input.addEventListener('input', (event) => {
     let status = document.createElement('div'),
-    f_element = document.querySelector('#task2');
-    status.className = 'status'
-    f_element.prepend(status);
-    if(validationCheck(event.target.value)){
+        f_element = document.querySelector('#task2');
+    // try {
+    //     f_element.removeChild(status);
+    // } catch {}
+    status.className = 'status';
+    if (validationCheck(event.target.value)) {
+        f_element.appendChild(status);
         console.log('true');
         btn.removeAttribute('disabled');
 
-    }
-    else{
+    } else {
         // console.log('false');
         btn.setAttribute('disabled', true);
     }
