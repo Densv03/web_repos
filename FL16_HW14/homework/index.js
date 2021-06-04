@@ -89,20 +89,30 @@ btn.setAttribute('disabled', true);
 function validationCheck(str) {
     return /^[+]*[s./0-9]{12}$/g.test(str);
 }
-input.addEventListener('input', (event) => {
-    let status = document.createElement('div'),
-        f_element = document.querySelector('#task2');
-    // try {
-    //     f_element.removeChild(status);
-    // } catch {}
-    status.className = 'status';
+input.addEventListener('input', event => {
+    let f_element = document.querySelector('#task2'),
+        status_red = document.createElement('div'),
+        status_green = document.createElement('div');
+        status_red.className = 'status_red';
+        status_green.className = 'status_green';
     if (validationCheck(event.target.value)) {
-        f_element.appendChild(status);
         console.log('true');
+        if(document.querySelector('.status_red') !== null){
+            f_element.removeChild(status_red);
+        }
+        if(document.querySelector('.status_green') !== null){
+            f_element.removeChild(status_green);
+        }
+        f_element.appendChild(status_green);
         btn.removeAttribute('disabled');
-
     } else {
-        // console.log('false');
+        if(document.querySelector('.status_red') !== null){
+            f_element.removeChild(status_red);
+        }
+        if(document.querySelector('.status_green') !== null){
+            f_element.removeChild(status_green);
+        }
+        f_element.appendChild(status_red);
         btn.setAttribute('disabled', true);
     }
 })

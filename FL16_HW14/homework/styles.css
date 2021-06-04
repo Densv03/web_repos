@@ -22,11 +22,19 @@ table {
     width: 300px;
 }
 
-.status{
+.status_green,
+.status_red {
     width: 400px;
     margin: 0 auto;
     height: 300px;
+}
+
+.status_red {
     background-color: #f00;
+}
+
+.status_green {
+    background-color: #0f0;
 }
 
 #task2 button {
