@@ -5,6 +5,10 @@ body{
     background: #fff;
 }
 header{
+    #changeTheme{
+        background-color: map-get($map: $colors, $key: "green");
+        color: map-get($map: $colors, $key: "white")
+    }
     background: url("../img/m-h-day.jpg");
     .header-wrap{
         .landing-logo{

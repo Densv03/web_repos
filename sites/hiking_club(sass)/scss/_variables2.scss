@@ -1,8 +1,13 @@
-$colors:("white":#fff, "grey":#bbbbce);
+$colors:("white":#fff, "grey":#bbbbce, "red": #ff4e33, "orange": #e3ac00,
+"dark-grey": #3b3f50);
 body{
     background-color: #21232e;
 }
 header{
+    #changeTheme{
+        background-color: map-get($map: $colors, $key: "red");
+        color: map-get($map: $colors, $key: "white");
+    }
     background: url("../img/m-h-night.jpg");
     .header-wrap{
         .landing-logo{
@@ -12,14 +17,14 @@ header{
         color:map-get($map: $colors, $key: "white");
         }
         .header_heading::before{
-            background-color: #ff4e33;
+            background-color: map-get($map: $colors, $key: "red");
         }
         .header_text{
-            color:map-get($map: $colors, $key: "white");
+            color: map-get($map: $colors, $key: "white");
         }
         .header_button{
             color:map-get($map: $colors, $key: "white");
-            background: #e3ac00;
+            background: map-get($map: $colors, $key: "orange");
             margin-right: 150px;
         }
     }
@@ -29,11 +34,11 @@ main{
         color:map-get($map: $colors, $key: "white");
     }
     .section_text::before{
-        background-color: #ff4e33;
+        background-color: map-get($map: $colors, $key: "red");
     }
     .section_card_wrap{
         .section_card{
-            background-color:#3b3f50;
+            background-color:map-get($map: $colors, $key: "dark-grey");
         }
         .section_card_right_container{
             .section_card_heading{
@@ -48,7 +53,7 @@ main{
         }
     }
     .section_banner::before{
-        background-color: #ff4e33;
+        background-color: map-get($map: $colors, $key: "red");
     }
     .section_banner{
         background: linear-gradient(90deg, #dea504, #953050);
@@ -59,7 +64,7 @@ main{
             color: #c0bfa0;
         }
         button{
-            background: #e3ac00;
+            background: map-get($map: $colors, $key: "orange");
             color:map-get($map: $colors, $key: "white");
         }
     }

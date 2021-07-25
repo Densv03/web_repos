@@ -4,10 +4,7 @@ body {
 }
 
 @mixin button {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 45px;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -23,6 +20,22 @@ header {
     background-size: cover;
     background-position: center;
     border-bottom-right-radius: 39%;
+
+    button{
+        float: right;
+    }
+
+    #changeTheme{
+    outline: none;
+    margin-top: 50px;
+    margin-right: 3%;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 5px;
+    }
 
     .header-wrap {
         width: 34%;
@@ -112,10 +125,11 @@ main {
     .section_text::before {
         position: absolute;
         content: '';
-        width: 160px;
+        width: 175px;
         height: 90%;
         top: 0px;
-        left: 960px;
+        // left: 932px;
+        left: 50.5%;
         z-index: -1;
     }
 

@@ -3,6 +3,9 @@ body {
 
 header {
   background: url("../img/m-h-night.jpg"); }
+  header #changeTheme {
+    background-color: #ff4e33;
+    color: #fff; }
   header .header-wrap .landing-logo {
     color: #fff; }
   header .header-wrap .header_heading {
@@ -60,6 +63,18 @@ header {
   background-size: cover;
   background-position: center;
   border-bottom-right-radius: 39%; }
+  header button {
+    float: right; }
+  header #changeTheme {
+    outline: none;
+    margin-top: 50px;
+    margin-right: 3%;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 5px; }
   header .header-wrap {
     width: 34%;
     margin-left: 10%;
@@ -104,10 +119,7 @@ header {
       margin-left: -40px;
       margin-top: -30px; }
     header .header-wrap .header_button {
-      padding-left: 45px;
-      padding-right: 45px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding: 15px 45px;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -131,10 +143,10 @@ main .section_text {
 main .section_text::before {
   position: absolute;
   content: '';
-  width: 160px;
+  width: 175px;
   height: 90%;
   top: 0px;
-  left: 960px;
+  left: 50.5%;
   z-index: -1; }
 main .section_card_wrap {
   font-family: 'Source Sans Pro', sans-serif;
@@ -192,10 +204,7 @@ main .section_banner {
   main .section_banner button {
     position: absolute;
     float: right;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 45px;
     border: none;
     outline: none;
     border-radius: 5px;
