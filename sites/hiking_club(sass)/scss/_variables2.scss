@@ -1,85 +1,88 @@
 $colors:("white":#fff, "grey":#bbbbce, "red": #ff4e33, "orange": #e3ac00,
 "dark-grey": #3b3f50);
-body{
+body {
     background-color: #21232e;
 }
-header{
-    #changeTheme{
+header {
+    #changeTheme {
         background-color: map-get($map: $colors, $key: "red");
         color: map-get($map: $colors, $key: "white");
     }
     background: url("../img/m-h-night.jpg");
-    .header-wrap{
-        .landing-logo{
-            color:map-get($map: $colors, $key: "white");
-        }
-        .header_heading{
-        color:map-get($map: $colors, $key: "white");
-        }
-        .header_heading::before{
-            background-color: map-get($map: $colors, $key: "red");
-        }
-        .header_text{
+    .header-wrap {
+        .landing-logo {
             color: map-get($map: $colors, $key: "white");
         }
-        .header_button{
-            color:map-get($map: $colors, $key: "white");
+        .header_heading {
+        color: map-get($map: $colors, $key: "white");
+        }
+        .header_heading::before {
+            background-color: map-get($map: $colors, $key: "red");
+        }
+        .header_text {
+            color: map-get($map: $colors, $key: "white");
+        }
+        .header_button {
+            color: map-get($map: $colors, $key: "white");
             background: map-get($map: $colors, $key: "orange");
             margin-right: 150px;
         }
     }
 }
-main{
-    .section_text{
-        color:map-get($map: $colors, $key: "white");
+main {
+    .section_text {
+        color: map-get($map: $colors, $key: "white");
     }
-    .section_text::before{
+    .section_text::before {
         background-color: map-get($map: $colors, $key: "red");
     }
-    .section_card_wrap{
-        .section_card{
-            background-color:map-get($map: $colors, $key: "dark-grey");
+    .section_card_wrap {
+        .section_card {
+            background-color: map-get($map: $colors, $key: "dark-grey");
         }
-        .section_card_right_container{
-            .section_card_heading{
-                color:map-get($map: $colors, $key: "white");
+        .section_card_right_container {
+            .section_card_heading {
+                color: map-get($map: $colors, $key: "white");
             }
-            .section_card_text{
-                color:map-get($map: $colors, $key: "grey")
+            .section_card_text {
+                color: map-get($map: $colors, $key: "grey")
             }
-            .section_link{
-                color:map-get($map: $colors, $key: "grey")
+            .section_link {
+                color: map-get($map: $colors, $key: "grey")
             }
         }
     }
-    .section_banner::before{
+    .section_banner::before {
         background-color: map-get($map: $colors, $key: "red");
     }
-    .section_banner{
+    .section_banner {
         background: linear-gradient(90deg, #dea504, #953050);
+
         .section_banner_heading{
-            color:map-get($map: $colors, $key: "white");
+            color: map-get($map: $colors, $key: "white");
         }
-        .section_banner_text{
+
+        .section_banner_text {
             color: #c0bfa0;
         }
+
         button{
             background: map-get($map: $colors, $key: "orange");
-            color:map-get($map: $colors, $key: "white");
+            color: map-get($map: $colors, $key: "white");
         }
     }
 }
-footer{
+footer {
     background-color:#3b3f50;
-    .footer-wrap{
-        .footer_logo{
-            color:map-get($map: $colors, $key: "grey")
+    .footer-wrap {
+        .footer_logo {
+            color: map-get($map: $colors, $key: "grey")
         }
-        .footer_text{
-            color:map-get($map: $colors, $key: "grey")
+        .footer_text {
+            color: map-get($map: $colors, $key: "grey")
         }
-        .footer-cr{
-            color:map-get($map: $colors, $key: "grey")
+        .footer-cr {
+            color: map-get($map: $colors, $key: "grey")
         }
     }
 }

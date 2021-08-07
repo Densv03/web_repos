@@ -21,11 +21,11 @@ header {
     background-position: center;
     border-bottom-right-radius: 39%;
 
-    button{
+    button {
         float: right;
     }
 
-    #changeTheme{
+    #changeTheme {
     outline: none;
     margin-top: 50px;
     margin-right: 3%;
@@ -67,7 +67,6 @@ header {
                     white-space: pre;
                 }
             }
-
         }
 
         .header_heading {
@@ -128,13 +127,13 @@ main {
         width: 175px;
         height: 90%;
         top: 0px;
-        // left: 932px;
         left: 50.5%;
         z-index: -1;
     }
 
     .section_card_wrap {
         font-family: 'Source Sans Pro', sans-serif;
+        margin-bottom: 50px;
         .section_card {
             width: 50%;
             height: 320px;
@@ -168,11 +167,9 @@ main {
                 }
             }
         }
-
-        margin-bottom: 50px;
     }
 
-    .section_banner::before{
+    .section_banner::before {
         content: '';
         position: absolute;
         height: 37%;
