@@ -1,0 +1,24 @@
+textarea{
+    display: block;
+}
+
+.title{
+    margin-left: 10%;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+button{
+    outline: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px 30px;
+    background: #ffecb4;
+    border: none;
+    transition: .3s;
+}
+button:hover{
+    background: #ffd649;
+    transition: .3s;
+}
