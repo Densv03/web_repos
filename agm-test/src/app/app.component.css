@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+agm-map {
+    height: 100vh;
+}
+
+.map-point-list {
+    height: calc(100vh - 40px);
+    width: 20%;
+    position: absolute;
+    top: 20px;
+    right: 2%;
+    background-color: #FFF;
+    border-radius: 9px;
+}
+
+.map-point-input {
+    background-color: #F2F2F2;
+    outline: none;
+    border: none;
+    width: calc(100% - 10px);
+    height: 33px;
+    padding: 0 0 0 10px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.map-point-element {
+    border-bottom: 1px solid #EDEDED;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.map-point-element:hover {
+    background-color: #F2F2F2;
+}
+
+.highlight-item {
+    background-color: rgba(255, 255, 0, .4);
+}
+
+::ng-deep a[href^="http://maps.google.com/maps"],
+::ng-deep a[href^="https://maps.google.com/maps"],
+::ng-deep a[href^="https://www.google.com/maps"] {
+    display: none !important;
+}
+::ng-deep .gm-bundled-control .gmnoprint {
+    display: block;
+}
+::ng-deep .gmnoprint:not(.gm-bundled-control) {
+    display: none;
+
+}
