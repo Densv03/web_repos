@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MapPointsService } from "../core/services/map-points.service";
+import { MapPointsService } from "./core/services/map-points.service";
 import { Observable } from "rxjs";
-import { MapPoint } from "../core/models/map-point";
+import { MapPoint } from "./core/models/map-point";
 
 @Component({
   selector: 'app-root',
