@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MapPointsService } from "./core/services/map-points.service";
 import { Observable } from "rxjs";
 import { MapPoint } from "./core/models/map-point";
@@ -9,7 +9,7 @@ import { MapPoint } from "./core/models/map-point";
   styleUrls: ['./app.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   public startPosition = this.mapPointsService.getStartPosition();
   public selectedMapPoint: number | null = null;
   public currentZoom = 4;
@@ -22,20 +22,21 @@ export class AppComponent implements OnInit {
   constructor(private mapPointsService: MapPointsService) {
   }
 
-  ngOnInit() {
-  }
-
   public markerClick(id: number): void {
-    this.selectedMapPoint = id - 1;
+    this.selectedMapPoint = id;
   }
 
   public mapPointItemClick(id: number): void {
     const currentMapPoint = this.mapPointsService.getMapPointById(id);
 
-    this.selectedMapPoint = id - 1;
+    this.selectedMapPoint = id;
 
     if (currentMapPoint) {
       this.startPosition = {longitude: currentMapPoint.longitude, latitude: currentMapPoint.latitude};
     }
+  }
+
+  public trackByFn(index: any, mapPoint: MapPoint): number {
+    return mapPoint.id;
   }
 }

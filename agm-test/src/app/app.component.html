@@ -3,20 +3,20 @@
              [longitude]="startPosition.longitude"
              [zoom]="currentZoom"
              [disableDefaultUI]="true">
-        <agm-marker *ngFor="let mapPoint of mapPoints | filter: filterText; let i = index"
+        <agm-marker *ngFor="let mapPoint of mapPoints | filter: filterText; trackBy: trackByFn"
                     [latitude]="mapPoint.latitude"
                     [longitude]="mapPoint.longitude"
                     (markerClick)="markerClick(mapPoint.id)"
-                    [iconUrl]="i === selectedMapPoint ? './assets/images/active-marker.svg' : './assets/images/marker.svg'"></agm-marker>
+                    [iconUrl]="mapPoint.id === selectedMapPoint ? './assets/images/active-marker.svg' : './assets/images/marker.svg'"></agm-marker>
     </agm-map>
 
     <div class="map-point-list">
         <h2>Объекты</h2>
         <input type="text" class="map-point-input" placeholder="Поиск" [(ngModel)]="filterText">
-        <div class="map-point-element" *ngFor="let mapPoint of mapPoints | filter: filterText; let i = index"
+        <div class="map-point-element"
+             *ngFor="let mapPoint of mapPoints | filter: filterText; trackBy: trackByFn"
              (click)="mapPointItemClick(mapPoint.id)"
-             [ngClass]="{'highlight-item': selectedMapPoint === i}">
-
+             [ngClass]="{'highlight-item': selectedMapPoint === mapPoint.id}">
             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="13" height="11" fill="url(#pattern0)"/>
